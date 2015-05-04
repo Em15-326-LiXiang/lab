@@ -1,0 +1,233 @@
+19:37:57.919 INFO  - Processing command line option -hwspec C:/Users/sony/Desktop/lab1v/lab1v.sdk/SDK/SDK_Export/hw/system.xml. 
+20:10:44.195 INFO  - Processor reset is completed for ps7_cortexa9_0 
+20:10:44.386 INFO  - PS initialization will be done as it is not done before. 
+20:10:44.387 INFO  - Running PS initialization.... 
+20:10:44.590 INFO  - ps7_init is completed. 
+20:10:44.690 INFO  - PS Initialization is complete. 
+20:14:19.716 INFO  - Processor reset is completed for ps7_cortexa9_0 
+20:14:19.816 INFO  - PS initialization will be done as it is not done before. 
+20:14:19.816 INFO  - Running PS initialization.... 
+20:14:20.237 INFO  - ps7_init is completed. 
+20:14:20.505 INFO  - PS Initialization is complete. 
+20:18:29.374 INFO  - ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+20:18:37.279 INFO  - Processor reset is completed for ps7_cortexa9_0 
+20:20:30.067 INFO  - ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+20:20:41.482 ERROR - Port COM16 is already in use. 
+20:20:41.816 ERROR - Unexpected error while launching program. java.lang.RuntimeException: Error in Resetting Target
+
+    Could not stop the processor after reset
+
+
+	at com.xilinx.sdk.targetmanager.internal.TM.doProcessorReset(Unknown Source)
+	at com.xilinx.sdk.debug.core.internal.AppRunner.run(Unknown Source)
+
+20:21:22.203 ERROR - Port COM16 is already in use. 
+20:21:22.614 ERROR - Unexpected error while launching program. java.lang.RuntimeException: Error in Resetting Target
+
+    Could not stop the processor after reset
+
+
+	at com.xilinx.sdk.targetmanager.internal.TM.doProcessorReset(Unknown Source)
+	at com.xilinx.sdk.debug.core.internal.AppRunner.run(Unknown Source)
+
+20:21:49.274 ERROR - Port COM16 is already in use. 
+20:21:49.748 ERROR - Unexpected error while launching program. java.lang.RuntimeException: Error in Resetting Target
+
+    Could not stop the processor after reset
+
+
+	at com.xilinx.sdk.targetmanager.internal.TM.doProcessorReset(Unknown Source)
+	at com.xilinx.sdk.debug.core.internal.AppRunner.run(Unknown Source)
+
+20:30:06.184 ERROR - Port COM16 is already in use. 
+20:30:06.578 INFO  - Processor reset is completed for ps7_cortexa9_0 
+20:30:06.678 INFO  - PS initialization will be done as it is not done before. 
+20:30:06.678 INFO  - Running PS initialization.... 
+20:30:07.354 INFO  - ps7_init is completed. 
+20:30:07.455 INFO  - PS Initialization is complete. 
+20:30:40.303 INFO  - ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+20:33:58.722 INFO  - ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+20:37:32.826 ERROR - Unable to disconnect from existing targets java.lang.NullPointerException
+	at com.xilinx.sdk.targetmanager.internal.json.XMDJSONProcess.issueCommand(Unknown Source)
+	at com.xilinx.sdk.targetmanager.internal.TM.disconnectTarget(Unknown Source)
+
+20:37:32.826 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+20:39:03.290 INFO  - Processing command line option -hwspec C:/Users/sony/Desktop/lab1v/lab1v.sdk/SDK/SDK_Export/hw/system.xml. 
+20:39:04.928 INFO  - The hardware specification for project 'hw_platform_0' is different from C:/Users/sony/Desktop/lab1v/lab1v.sdk/SDK/SDK_Export/hw/system.xml. 
+20:39:05.037 INFO  - Copied contents of C:/Users/sony/Desktop/lab1v/lab1v.sdk/SDK/SDK_Export/hw/system.xml into \hw_platform_0\system.xml. 
+20:39:05.115 INFO  - Copied contents of C:\Users\sony\Desktop\lab1v\lab1v.sdk\SDK\SDK_Export\hw\ps7_init.c into \hw_platform_0\ps7_init.c. 
+20:39:05.130 INFO  - Copied contents of C:\Users\sony\Desktop\lab1v\lab1v.sdk\SDK\SDK_Export\hw\ps7_init.h into \hw_platform_0\ps7_init.h. 
+20:39:05.130 INFO  - Copied contents of C:\Users\sony\Desktop\lab1v\lab1v.sdk\SDK\SDK_Export\hw\ps7_init.html into \hw_platform_0\ps7_init.html. 
+20:39:05.130 INFO  - Copied contents of C:\Users\sony\Desktop\lab1v\lab1v.sdk\SDK\SDK_Export\hw\ps7_summary.html into \hw_platform_0\ps7_summary.html. 
+20:39:05.130 INFO  - Copied contents of C:\Users\sony\Desktop\lab1v\lab1v.sdk\SDK\SDK_Export\hw\ps7_init.tcl into \hw_platform_0\ps7_init.tcl. 
+20:39:05.255 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+20:39:07.580 INFO  - Updating hardware inferred compiler options for mem_test1. 
+20:39:07.580 INFO  - Clearing existing target manager status. 
+20:39:10.903 INFO  - Workspace synchronized with the new hardware specification file. Cleaning dependent projects... 
+20:45:38.470 ERROR - Port COM16 is already in use. 
+20:45:38.844 INFO  - Processor reset is completed for ps7_cortexa9_0 
+20:45:38.953 INFO  - PS initialization will be done as it is not done before. 
+20:45:38.953 INFO  - Running PS initialization.... 
+20:45:39.250 INFO  - ps7_init is completed. 
+20:45:39.359 INFO  - PS Initialization is complete. 
+20:46:08.275 INFO  - ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+20:46:22.330 ERROR - Port COM16 is already in use. 
+20:46:23.001 INFO  - Processor reset is completed for ps7_cortexa9_0 
+20:46:25.015 ERROR - Unexpected error while launching program. java.lang.RuntimeException: Failed to download ELF file
+
+
+    AP transaction timeout: ACK = 0x01, expected=0x02)
+    Error Address = 0x00000000, Size = 0x00000004
+
+
+	at com.xilinx.sdk.targetmanager.internal.TM.downloadELF(Unknown Source)
+	at com.xilinx.sdk.debug.core.internal.AppRunner.run(Unknown Source)
+
+20:47:09.614 ERROR - Port COM16 is already in use. 
+20:47:10.035 INFO  - Processor reset is completed for ps7_cortexa9_0 
+20:47:10.144 INFO  - PS initialization will be done as it is not done before. 
+20:47:10.144 INFO  - Running PS initialization.... 
+20:47:10.487 INFO  - ps7_init is completed. 
+20:47:10.597 INFO  - PS Initialization is complete. 
+20:47:58.332 INFO  - Processor reset is completed for ps7_cortexa9_0 
+20:49:22.105 ERROR - Port COM16 is already in use. 
+20:49:22.526 INFO  - Processor reset is completed for ps7_cortexa9_0 
+20:49:22.635 INFO  - PS initialization will be done as it is not done before. 
+20:49:22.635 INFO  - Running PS initialization.... 
+20:49:23.166 INFO  - ps7_init is completed. 
+20:49:23.275 INFO  - PS Initialization is complete. 
+20:50:09.956 INFO  - ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+20:50:17.787 ERROR - Unexpected error while launching program. java.lang.RuntimeException: Unable to Stop Processor. System could be in unknown state.
+Please reset the system
+Unknown Error Occured
+    
+
+	at com.xilinx.sdk.targetmanager.internal.TM.stop(Unknown Source)
+	at com.xilinx.sdk.targetmanager.internal.CPURunSession.terminate(Unknown Source)
+
+20:50:24.589 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+20:51:11.064 INFO  - Processing command line option -hwspec C:/Users/sony/Desktop/lab1v/lab1v.sdk/SDK/SDK_Export/hw/system.xml. 
+20:51:12.390 INFO  - The hardware specification for project 'hw_platform_0' is different from C:/Users/sony/Desktop/lab1v/lab1v.sdk/SDK/SDK_Export/hw/system.xml. 
+20:51:12.406 INFO  - Copied contents of C:/Users/sony/Desktop/lab1v/lab1v.sdk/SDK/SDK_Export/hw/system.xml into \hw_platform_0\system.xml. 
+20:51:12.500 INFO  - Copied contents of C:\Users\sony\Desktop\lab1v\lab1v.sdk\SDK\SDK_Export\hw\ps7_init.c into \hw_platform_0\ps7_init.c. 
+20:51:12.500 INFO  - Copied contents of C:\Users\sony\Desktop\lab1v\lab1v.sdk\SDK\SDK_Export\hw\ps7_init.h into \hw_platform_0\ps7_init.h. 
+20:51:12.500 INFO  - Copied contents of C:\Users\sony\Desktop\lab1v\lab1v.sdk\SDK\SDK_Export\hw\ps7_init.html into \hw_platform_0\ps7_init.html. 
+20:51:12.515 INFO  - Copied contents of C:\Users\sony\Desktop\lab1v\lab1v.sdk\SDK\SDK_Export\hw\ps7_summary.html into \hw_platform_0\ps7_summary.html. 
+20:51:12.515 INFO  - Copied contents of C:\Users\sony\Desktop\lab1v\lab1v.sdk\SDK\SDK_Export\hw\ps7_init.tcl into \hw_platform_0\ps7_init.tcl. 
+20:51:12.640 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+20:51:39.613 INFO  - Updating hardware inferred compiler options for mem_test1. 
+20:51:39.675 INFO  - Clearing existing target manager status. 
+20:51:43.187 INFO  - Workspace synchronized with the new hardware specification file. Cleaning dependent projects... 
+20:59:12.282 INFO  - Processor reset is completed for ps7_cortexa9_0 
+20:59:12.391 INFO  - PS initialization will be done as it is not done before. 
+20:59:12.391 INFO  - Running PS initialization.... 
+20:59:12.703 INFO  - ps7_init is completed. 
+20:59:12.813 INFO  - PS Initialization is complete. 
+20:59:44.032 INFO  - Processor reset is completed for ps7_cortexa9_0 
+21:00:47.773 INFO  - FPGA Cable Disconnected. All active launches will be terminated. 
+21:00:47.783 WARN  - Terminating existing sessions on processor ps7_cortexa9_0 
+21:13:56.013 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+10:47:05.012 INFO  - Processing command line option -hwspec C:/Users/sony/Desktop/lab1v/lab1v.sdk/SDK/SDK_Export/hw/system.xml. 
+10:47:07.265 INFO  - The hardware specification for project 'hw_platform_0' is different from C:/Users/sony/Desktop/lab1v/lab1v.sdk/SDK/SDK_Export/hw/system.xml. 
+10:47:07.413 INFO  - Copied contents of C:/Users/sony/Desktop/lab1v/lab1v.sdk/SDK/SDK_Export/hw/system.xml into \hw_platform_0\system.xml. 
+10:47:11.753 INFO  - Copied contents of C:\Users\sony\Desktop\lab1v\lab1v.sdk\SDK\SDK_Export\hw\ps7_init.c into \hw_platform_0\ps7_init.c. 
+10:47:11.756 INFO  - Copied contents of C:\Users\sony\Desktop\lab1v\lab1v.sdk\SDK\SDK_Export\hw\ps7_init.h into \hw_platform_0\ps7_init.h. 
+10:47:11.762 INFO  - Copied contents of C:\Users\sony\Desktop\lab1v\lab1v.sdk\SDK\SDK_Export\hw\ps7_init.html into \hw_platform_0\ps7_init.html. 
+10:47:11.765 INFO  - Copied contents of C:\Users\sony\Desktop\lab1v\lab1v.sdk\SDK\SDK_Export\hw\ps7_summary.html into \hw_platform_0\ps7_summary.html. 
+10:47:11.769 INFO  - Copied contents of C:\Users\sony\Desktop\lab1v\lab1v.sdk\SDK\SDK_Export\hw\ps7_init.tcl into \hw_platform_0\ps7_init.tcl. 
+10:47:11.926 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+10:47:18.037 INFO  - Updating hardware inferred compiler options for mem_test1. 
+10:47:18.045 INFO  - Clearing existing target manager status. 
+10:47:24.156 INFO  - Workspace synchronized with the new hardware specification file. Cleaning dependent projects... 
+10:50:10.414 INFO  - Processor reset is completed for ps7_cortexa9_0 
+10:51:08.517 ERROR - Port COM16 is already in use. 
+10:51:08.910 INFO  - Processor reset is completed for ps7_cortexa9_0 
+10:52:23.755 ERROR - Port COM16 is already in use. 
+10:52:24.153 INFO  - Processor reset is completed for ps7_cortexa9_0 
+10:53:03.280 ERROR - Port COM16 is already in use. 
+10:53:03.677 INFO  - Processor reset is completed for ps7_cortexa9_0 
+10:56:09.489 ERROR - Port COM16 is already in use. 
+10:56:09.887 INFO  - Processor reset is completed for ps7_cortexa9_0 
+10:57:33.735 ERROR - Port COM16 is already in use. 
+10:57:34.570 INFO  - Processor reset is completed for ps7_cortexa9_0 
+10:58:39.471 ERROR - Port COM16 is already in use. 
+10:58:39.868 INFO  - Processor reset is completed for ps7_cortexa9_0 
+10:59:46.533 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+21:17:21.143 INFO  - Processing command line option -hwspec C:/Users/sony/Desktop/lab1v/lab1v.sdk/SDK/SDK_Export/hw/system.xml. 
+21:17:25.289 INFO  - The hardware specification for project 'hw_platform_0' is different from C:/Users/sony/Desktop/lab1v/lab1v.sdk/SDK/SDK_Export/hw/system.xml. 
+21:17:25.450 INFO  - Copied contents of C:/Users/sony/Desktop/lab1v/lab1v.sdk/SDK/SDK_Export/hw/system.xml into \hw_platform_0\system.xml. 
+21:17:25.630 INFO  - Copied contents of C:\Users\sony\Desktop\lab1v\lab1v.sdk\SDK\SDK_Export\hw\ps7_init.c into \hw_platform_0\ps7_init.c. 
+21:17:25.690 INFO  - Copied contents of C:\Users\sony\Desktop\lab1v\lab1v.sdk\SDK\SDK_Export\hw\ps7_init.h into \hw_platform_0\ps7_init.h. 
+21:17:25.953 INFO  - Copied contents of C:\Users\sony\Desktop\lab1v\lab1v.sdk\SDK\SDK_Export\hw\ps7_init.html into \hw_platform_0\ps7_init.html. 
+21:17:29.708 INFO  - Copied contents of C:\Users\sony\Desktop\lab1v\lab1v.sdk\SDK\SDK_Export\hw\ps7_summary.html into \hw_platform_0\ps7_summary.html. 
+21:17:29.774 INFO  - Copied contents of C:\Users\sony\Desktop\lab1v\lab1v.sdk\SDK\SDK_Export\hw\ps7_init.tcl into \hw_platform_0\ps7_init.tcl. 
+21:17:30.157 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+21:18:35.597 INFO  - Updating hardware inferred compiler options for mem-test. 
+21:18:36.350 INFO  - Updating hardware inferred compiler options for mem_test1. 
+21:18:36.382 INFO  - Clearing existing target manager status. 
+21:28:38.732 ERROR - Port COM16 is already in use. 
+21:28:39.198 INFO  - Processor reset is completed for ps7_cortexa9_0 
+21:28:39.205 INFO  - PS initialization will be done as it is not done before. 
+21:28:39.205 INFO  - Running PS initialization.... 
+21:28:39.655 INFO  - ps7_init is completed. 
+21:28:39.755 INFO  - PS Initialization is complete. 
+21:29:00.421 ERROR - Port COM16 is already in use. 
+21:29:00.818 INFO  - Processor reset is completed for ps7_cortexa9_0 
+21:29:44.793 INFO  - Processor reset is completed for ps7_cortexa9_0 
+21:29:45.127 INFO  - PS initialization will be done as it is not done before. 
+21:29:45.128 INFO  - Running PS initialization.... 
+21:29:46.358 INFO  - ps7_init is completed. 
+21:29:46.458 INFO  - PS Initialization is complete. 
+21:29:48.191 ERROR - Port COM16 is already in use. 
+21:29:48.755 ERROR - Unexpected error while launching program. java.lang.RuntimeException: Invalid Target ID
+    Target '64' Does NOT exist in the Current System
+
+
+	at com.xilinx.sdk.targetmanager.internal.TM.doProcessorReset(Unknown Source)
+	at com.xilinx.sdk.debug.core.internal.AppRunner.run(Unknown Source)
+
+21:30:48.633 INFO  - Time out for XMD transaction is 60000
+If you want to increase the timeout value, goto Windows-> Preferences -> Xilinx SDK -> XMD Startup 
+21:30:48.633 ERROR - Timeout occured while waiting to get reply for command "xdisconnect 352" 
+21:31:12.857 ERROR - Port COM16 is already in use. 
+21:31:13.254 INFO  - Processor reset is completed for ps7_cortexa9_0 
+21:31:47.575 ERROR - Port COM16 is already in use. 
+21:31:47.940 INFO  - Processor reset is completed for ps7_cortexa9_0 
+21:32:44.928 ERROR - Port COM16 is already in use. 
+21:32:45.325 INFO  - Processor reset is completed for ps7_cortexa9_0 
+21:33:02.406 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+21:54:37.407 INFO  - Processing command line option -hwspec C:/Users/sony/Desktop/lab1v/lab1v.sdk/SDK/SDK_Export/hw/system.xml. 
+21:54:41.114 INFO  - The hardware specification for project 'hw_platform_0' is different from C:/Users/sony/Desktop/lab1v/lab1v.sdk/SDK/SDK_Export/hw/system.xml. 
+21:54:41.473 INFO  - Copied contents of C:/Users/sony/Desktop/lab1v/lab1v.sdk/SDK/SDK_Export/hw/system.xml into \hw_platform_0\system.xml. 
+21:54:44.534 INFO  - Copied contents of C:\Users\sony\Desktop\lab1v\lab1v.sdk\SDK\SDK_Export\hw\ps7_init.c into \hw_platform_0\ps7_init.c. 
+21:54:44.537 INFO  - Copied contents of C:\Users\sony\Desktop\lab1v\lab1v.sdk\SDK\SDK_Export\hw\ps7_init.h into \hw_platform_0\ps7_init.h. 
+21:54:44.543 INFO  - Copied contents of C:\Users\sony\Desktop\lab1v\lab1v.sdk\SDK\SDK_Export\hw\ps7_init.html into \hw_platform_0\ps7_init.html. 
+21:54:44.546 INFO  - Copied contents of C:\Users\sony\Desktop\lab1v\lab1v.sdk\SDK\SDK_Export\hw\ps7_summary.html into \hw_platform_0\ps7_summary.html. 
+21:54:44.548 INFO  - Copied contents of C:\Users\sony\Desktop\lab1v\lab1v.sdk\SDK\SDK_Export\hw\ps7_init.tcl into \hw_platform_0\ps7_init.tcl. 
+21:54:44.732 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+21:55:46.807 INFO  - Updating hardware inferred compiler options for mem-test. 
+21:55:47.559 INFO  - Updating hardware inferred compiler options for mem_test1. 
+21:55:47.633 INFO  - Clearing existing target manager status. 
+21:56:38.859 INFO  - Processor reset is completed for ps7_cortexa9_0 
+21:56:38.959 INFO  - PS initialization will be done as it is not done before. 
+21:56:38.959 INFO  - Running PS initialization.... 
+21:56:39.418 INFO  - ps7_init is completed. 
+21:56:39.518 INFO  - PS Initialization is complete. 
+21:57:05.864 ERROR - Port COM16 is already in use. 
+21:57:06.262 INFO  - Processor reset is completed for ps7_cortexa9_0 
+21:58:15.959 ERROR - Unexpected error while launching program. com.xilinx.sdk.targetmanager.TMException: 
+    Failed to Open JTAG Cable
+    Cable target is not connected to the host
+
+	at com.xilinx.sdk.targetmanager.internal.TM.connectToProcessor(Unknown Source)
+	at com.xilinx.sdk.debug.core.internal.AppRunner.run(Unknown Source)
+
+21:58:46.697 INFO  - Processor reset is completed for ps7_cortexa9_0 
+21:58:46.797 INFO  - PS initialization will be done as it is not done before. 
+21:58:46.797 INFO  - Running PS initialization.... 
+21:58:47.254 INFO  - ps7_init is completed. 
+21:58:47.354 INFO  - PS Initialization is complete. 
+21:59:28.391 ERROR - Port COM16 is already in use. 
+21:59:28.789 INFO  - Processor reset is completed for ps7_cortexa9_0 
+22:01:11.501 ERROR - Port COM16 is already in use. 
+22:01:11.898 INFO  - Processor reset is completed for ps7_cortexa9_0 

@@ -1,0 +1,211 @@
+13:16:37.440 INFO  - Processing command line option -hwspec C:/xup/embedded/labs/lab1/lab1.sdk/SDK/SDK_Export/hw/system.xml. 
+13:23:13.086 INFO  - Processor reset is completed for ps7_cortexa9_0 
+13:23:13.195 INFO  - PS initialization will be done as it is not done before. 
+13:23:13.195 INFO  - Running PS initialization.... 
+13:23:13.507 INFO  - ps7_init is completed. 
+13:23:13.617 INFO  - PS Initialization is complete. 
+13:25:51.725 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+11:01:26.491 INFO  - Processing command line option -hwspec C:/Users/sony/Desktop/lab1/lab1.sdk/SDK/SDK_Export/hw/system.xml. 
+11:01:26.694 INFO  - The hardware specification for project 'hw_platform_0' is different from C:/Users/sony/Desktop/lab1/lab1.sdk/SDK/SDK_Export/hw/system.xml. 
+11:01:26.928 INFO  - Copied contents of C:/Users/sony/Desktop/lab1/lab1.sdk/SDK/SDK_Export/hw/system.xml into \hw_platform_0\system.xml. 
+11:01:27.209 INFO  - Copied contents of C:\Users\sony\Desktop\lab1\lab1.sdk\SDK\SDK_Export\hw\ps7_init.c into \hw_platform_0\ps7_init.c. 
+11:01:27.224 INFO  - Copied contents of C:\Users\sony\Desktop\lab1\lab1.sdk\SDK\SDK_Export\hw\ps7_init.h into \hw_platform_0\ps7_init.h. 
+11:01:27.256 INFO  - Copied contents of C:\Users\sony\Desktop\lab1\lab1.sdk\SDK\SDK_Export\hw\ps7_init.html into \hw_platform_0\ps7_init.html. 
+11:01:27.256 INFO  - Copied contents of C:\Users\sony\Desktop\lab1\lab1.sdk\SDK\SDK_Export\hw\ps7_summary.html into \hw_platform_0\ps7_summary.html. 
+11:01:27.271 INFO  - Copied contents of C:\Users\sony\Desktop\lab1\lab1.sdk\SDK\SDK_Export\hw\ps7_init.tcl into \hw_platform_0\ps7_init.tcl. 
+11:01:27.443 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+11:02:48.750 INFO  - Updating hardware inferred compiler options for mem_test. 
+11:02:48.813 INFO  - Clearing existing target manager status. 
+11:02:58.423 INFO  - Closing and re-opening the MSS file of ther project mem_test_bsp 
+11:03:00.389 INFO  - Workspace synchronized with the new hardware specification file. Cleaning dependent projects... 
+11:04:32.149 INFO  - ps7_init.tcl file does not exists in HwPlatform 
+11:04:32.249 INFO  - Processor reset is completed for ps7_cortexa9_0 
+11:04:32.512 INFO  - PS initialization will be done as it is not done before. 
+11:04:32.512 INFO  - Running PS initialization.... 
+11:04:32.848 ERROR - Unexpected error while launching program. java.lang.RuntimeException: Error while running ps7_init method.
+invalid command name "ps7_init"
+	at com.xilinx.sdk.targetmanager.internal.TM.run_ps7_init(Unknown Source)
+	at com.xilinx.sdk.targetmanager.internal.TM.runPs7Init(Unknown Source)
+
+11:06:21.380 INFO  - ps7_init.tcl file does not exists in HwPlatform 
+11:06:21.478 ERROR - Unexpected error while launching program. java.lang.RuntimeException: Error in Resetting Target
+
+    Could not stop the processor after reset
+
+
+	at com.xilinx.sdk.targetmanager.internal.TM.doProcessorReset(Unknown Source)
+	at com.xilinx.sdk.debug.core.internal.AppRunner.run(Unknown Source)
+
+11:07:37.758 INFO  - ps7_init.tcl file does not exists in HwPlatform 
+11:07:37.867 INFO  - Processor reset is completed for ps7_cortexa9_0 
+11:07:37.976 INFO  - PS initialization will be done as it is not done before. 
+11:07:37.976 INFO  - Running PS initialization.... 
+11:07:38.086 ERROR - Unexpected error while launching program. java.lang.RuntimeException: Error while running ps7_init method.
+invalid command name "ps7_init"
+	at com.xilinx.sdk.targetmanager.internal.TM.run_ps7_init(Unknown Source)
+	at com.xilinx.sdk.targetmanager.internal.TM.runPs7Init(Unknown Source)
+
+11:10:18.582 INFO  - ps7_init.tcl file does not exists in HwPlatform 
+11:10:18.691 INFO  - Processor reset is completed for ps7_cortexa9_0 
+11:10:18.800 INFO  - PS initialization will be done as it is not done before. 
+11:10:18.800 INFO  - Running PS initialization.... 
+11:10:18.909 ERROR - Unexpected error while launching program. java.lang.RuntimeException: Error while running ps7_init method.
+invalid command name "ps7_init"
+	at com.xilinx.sdk.targetmanager.internal.TM.run_ps7_init(Unknown Source)
+	at com.xilinx.sdk.targetmanager.internal.TM.runPs7Init(Unknown Source)
+
+11:12:57.446 INFO  - ps7_init.tcl file does not exists in HwPlatform 
+11:12:57.555 INFO  - Processor reset is completed for ps7_cortexa9_0 
+11:12:57.773 INFO  - PS initialization will be done as it is not done before. 
+11:12:57.773 INFO  - Running PS initialization.... 
+11:12:57.883 ERROR - Unexpected error while launching program. java.lang.RuntimeException: Error while running ps7_init method.
+invalid command name "ps7_init"
+	at com.xilinx.sdk.targetmanager.internal.TM.run_ps7_init(Unknown Source)
+	at com.xilinx.sdk.targetmanager.internal.TM.runPs7Init(Unknown Source)
+
+11:14:49.488 INFO  - ps7_init.tcl file does not exists in HwPlatform 
+11:14:49.753 INFO  - Processor reset is completed for ps7_cortexa9_0 
+11:14:50.003 INFO  - PS initialization will be done as it is not done before. 
+11:14:50.003 INFO  - Running PS initialization.... 
+11:14:50.112 ERROR - Unexpected error while launching program. java.lang.RuntimeException: Error while running ps7_init method.
+invalid command name "ps7_init"
+	at com.xilinx.sdk.targetmanager.internal.TM.run_ps7_init(Unknown Source)
+	at com.xilinx.sdk.targetmanager.internal.TM.runPs7Init(Unknown Source)
+
+11:16:32.282 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+11:18:53.174 INFO  - Processing command line option -hwspec C:/Users/sony/Desktop/lab1/lab1.sdk/SDK/SDK_Export/hw/system.xml. 
+11:18:54.702 INFO  - The hardware specification for project 'hw_platform_0' is different from C:/Users/sony/Desktop/lab1/lab1.sdk/SDK/SDK_Export/hw/system.xml. 
+11:18:54.718 INFO  - Copied contents of C:/Users/sony/Desktop/lab1/lab1.sdk/SDK/SDK_Export/hw/system.xml into \hw_platform_0\system.xml. 
+11:18:54.796 INFO  - Copied contents of C:\Users\sony\Desktop\lab1\lab1.sdk\SDK\SDK_Export\hw\ps7_init.c into \hw_platform_0\ps7_init.c. 
+11:18:54.796 INFO  - Copied contents of C:\Users\sony\Desktop\lab1\lab1.sdk\SDK\SDK_Export\hw\ps7_init.h into \hw_platform_0\ps7_init.h. 
+11:18:54.812 INFO  - Copied contents of C:\Users\sony\Desktop\lab1\lab1.sdk\SDK\SDK_Export\hw\ps7_init.html into \hw_platform_0\ps7_init.html. 
+11:18:54.812 INFO  - Copied contents of C:\Users\sony\Desktop\lab1\lab1.sdk\SDK\SDK_Export\hw\ps7_summary.html into \hw_platform_0\ps7_summary.html. 
+11:18:54.812 INFO  - Copied contents of C:\Users\sony\Desktop\lab1\lab1.sdk\SDK\SDK_Export\hw\ps7_init.tcl into \hw_platform_0\ps7_init.tcl. 
+11:18:54.936 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+11:18:57.261 INFO  - Updating hardware inferred compiler options for mem_test. 
+11:18:57.276 INFO  - Clearing existing target manager status. 
+11:19:57.327 INFO  - ps7_init.tcl file does not exists in HwPlatform 
+11:19:57.436 INFO  - Processor reset is completed for ps7_cortexa9_0 
+11:19:57.545 INFO  - PS initialization will be done as it is not done before. 
+11:19:57.545 INFO  - Running PS initialization.... 
+11:19:57.873 ERROR - Unexpected error while launching program. java.lang.RuntimeException: Error while running ps7_init method.
+invalid command name "ps7_init"
+	at com.xilinx.sdk.targetmanager.internal.TM.run_ps7_init(Unknown Source)
+	at com.xilinx.sdk.targetmanager.internal.TM.runPs7Init(Unknown Source)
+
+11:21:00.608 ERROR - Unexpected error while launching program. com.xilinx.sdk.targetmanager.TMException: 
+    Failed to Open JTAG Cable
+    Cable target is not connected to the host
+
+	at com.xilinx.sdk.targetmanager.internal.TM.connectToProcessor(Unknown Source)
+	at com.xilinx.sdk.debug.core.internal.AppRunner.run(Unknown Source)
+
+11:21:21.155 INFO  - ps7_init.tcl file does not exists in HwPlatform 
+11:21:21.326 INFO  - Processor reset is completed for ps7_cortexa9_0 
+11:21:21.436 INFO  - PS initialization will be done as it is not done before. 
+11:21:21.436 INFO  - Running PS initialization.... 
+11:21:21.545 ERROR - Unexpected error while launching program. java.lang.RuntimeException: Error while running ps7_init method.
+invalid command name "ps7_init"
+	at com.xilinx.sdk.targetmanager.internal.TM.run_ps7_init(Unknown Source)
+	at com.xilinx.sdk.targetmanager.internal.TM.runPs7Init(Unknown Source)
+
+11:24:03.951 INFO  - ps7_init.tcl file does not exists in HwPlatform 
+11:24:04.061 INFO  - Processor reset is completed for ps7_cortexa9_0 
+11:24:04.170 INFO  - PS initialization will be done as it is not done before. 
+11:24:04.170 INFO  - Running PS initialization.... 
+11:24:04.279 ERROR - Unexpected error while launching program. java.lang.RuntimeException: Error while running ps7_init method.
+invalid command name "ps7_init"
+	at com.xilinx.sdk.targetmanager.internal.TM.run_ps7_init(Unknown Source)
+	at com.xilinx.sdk.targetmanager.internal.TM.runPs7Init(Unknown Source)
+
+11:24:19.260 INFO  - ps7_init.tcl file does not exists in HwPlatform 
+11:24:19.385 INFO  - Processor reset is completed for ps7_cortexa9_0 
+11:24:19.485 INFO  - PS initialization will be done as it is not done before. 
+11:24:19.485 INFO  - Running PS initialization.... 
+11:24:19.585 ERROR - Unexpected error while launching program. java.lang.RuntimeException: Error while running ps7_init method.
+invalid command name "ps7_init"
+	at com.xilinx.sdk.targetmanager.internal.TM.run_ps7_init(Unknown Source)
+	at com.xilinx.sdk.targetmanager.internal.TM.runPs7Init(Unknown Source)
+
+11:25:13.300 INFO  - ps7_init.tcl file does not exists in HwPlatform 
+11:25:13.409 INFO  - Processor reset is completed for ps7_cortexa9_0 
+11:25:13.518 INFO  - PS initialization will be done as it is not done before. 
+11:25:13.518 INFO  - Running PS initialization.... 
+11:25:13.628 ERROR - Unexpected error while launching program. java.lang.RuntimeException: Error while running ps7_init method.
+invalid command name "ps7_init"
+	at com.xilinx.sdk.targetmanager.internal.TM.run_ps7_init(Unknown Source)
+	at com.xilinx.sdk.targetmanager.internal.TM.runPs7Init(Unknown Source)
+
+11:28:16.200 INFO  - ps7_init.tcl file does not exists in HwPlatform 
+11:28:16.309 INFO  - Processor reset is completed for ps7_cortexa9_0 
+11:28:16.418 INFO  - PS initialization will be done as it is not done before. 
+11:28:16.418 INFO  - Running PS initialization.... 
+11:28:16.528 ERROR - Unexpected error while launching program. java.lang.RuntimeException: Error while running ps7_init method.
+invalid command name "ps7_init"
+	at com.xilinx.sdk.targetmanager.internal.TM.run_ps7_init(Unknown Source)
+	at com.xilinx.sdk.targetmanager.internal.TM.runPs7Init(Unknown Source)
+
+11:29:01.922 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+10:03:51.583 INFO  - Processing command line option -hwspec C:/Users/sony/Desktop/lab1/lab1.sdk/SDK/SDK_Export/hw/system.xml. 
+10:03:54.236 INFO  - The hardware specification for project 'hw_platform_0' is different from C:/Users/sony/Desktop/lab1/lab1.sdk/SDK/SDK_Export/hw/system.xml. 
+10:03:54.405 INFO  - Copied contents of C:/Users/sony/Desktop/lab1/lab1.sdk/SDK/SDK_Export/hw/system.xml into \hw_platform_0\system.xml. 
+10:03:54.619 INFO  - Copied contents of C:\Users\sony\Desktop\lab1\lab1.sdk\SDK\SDK_Export\hw\ps7_init.c into \hw_platform_0\ps7_init.c. 
+10:03:54.690 INFO  - Copied contents of C:\Users\sony\Desktop\lab1\lab1.sdk\SDK\SDK_Export\hw\ps7_init.h into \hw_platform_0\ps7_init.h. 
+10:03:54.717 INFO  - Copied contents of C:\Users\sony\Desktop\lab1\lab1.sdk\SDK\SDK_Export\hw\ps7_init.html into \hw_platform_0\ps7_init.html. 
+10:03:54.727 INFO  - Copied contents of C:\Users\sony\Desktop\lab1\lab1.sdk\SDK\SDK_Export\hw\ps7_summary.html into \hw_platform_0\ps7_summary.html. 
+10:03:54.787 INFO  - Copied contents of C:\Users\sony\Desktop\lab1\lab1.sdk\SDK\SDK_Export\hw\ps7_init.tcl into \hw_platform_0\ps7_init.tcl. 
+10:03:54.996 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+10:04:48.188 INFO  - Updating hardware inferred compiler options for mem_test. 
+10:04:48.218 INFO  - Clearing existing target manager status. 
+10:08:13.401 ERROR - Unexpected error while fetching XMD's response:  java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(Unknown Source)
+	at sun.nio.cs.StreamDecoder.readBytes(Unknown Source)
+
+10:08:13.402 ERROR - Zero sized response read from XMD. This indicates a communication error or a programming error. 
+10:10:01.214 INFO  - Processing command line option -hwspec C:/Users/sony/Desktop/lab1/lab1.sdk/SDK/SDK_Export/hw/system.xml. 
+10:10:02.613 INFO  - The hardware specification for project 'hw_platform_0' is different from C:/Users/sony/Desktop/lab1/lab1.sdk/SDK/SDK_Export/hw/system.xml. 
+10:10:02.629 INFO  - Copied contents of C:/Users/sony/Desktop/lab1/lab1.sdk/SDK/SDK_Export/hw/system.xml into \hw_platform_0\system.xml. 
+10:10:02.715 INFO  - Copied contents of C:\Users\sony\Desktop\lab1\lab1.sdk\SDK\SDK_Export\hw\ps7_init.c into \hw_platform_0\ps7_init.c. 
+10:10:02.739 INFO  - Copied contents of C:\Users\sony\Desktop\lab1\lab1.sdk\SDK\SDK_Export\hw\ps7_init.h into \hw_platform_0\ps7_init.h. 
+10:10:03.134 INFO  - Copied contents of C:\Users\sony\Desktop\lab1\lab1.sdk\SDK\SDK_Export\hw\ps7_init.html into \hw_platform_0\ps7_init.html. 
+10:10:03.159 INFO  - Copied contents of C:\Users\sony\Desktop\lab1\lab1.sdk\SDK\SDK_Export\hw\ps7_summary.html into \hw_platform_0\ps7_summary.html. 
+10:10:03.166 INFO  - Copied contents of C:\Users\sony\Desktop\lab1\lab1.sdk\SDK\SDK_Export\hw\ps7_init.tcl into \hw_platform_0\ps7_init.tcl. 
+10:10:03.296 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+10:10:38.181 INFO  - Updating hardware inferred compiler options for mem_test. 
+10:10:38.225 INFO  - Clearing existing target manager status. 
+10:26:31.531 INFO  - Processor reset is completed for ps7_cortexa9_0 
+10:26:31.631 INFO  - PS initialization will be done as it is not done before. 
+10:26:31.631 INFO  - Running PS initialization.... 
+10:26:32.425 INFO  - ps7_init is completed. 
+10:26:32.525 INFO  - PS Initialization is complete. 
+10:27:21.843 INFO  - Processor reset is completed for ps7_cortexa9_0 
+10:28:34.805 ERROR - Port COM16 is already in use. 
+10:28:35.199 INFO  - Processor reset is completed for ps7_cortexa9_0 
+10:30:35.765 INFO  - Processor reset is completed for ps7_cortexa9_0 
+10:31:13.597 ERROR - Port COM16 is already in use. 
+10:31:13.995 INFO  - Processor reset is completed for ps7_cortexa9_0 
+10:31:47.909 ERROR - Port COM16 is already in use. 
+10:31:48.307 INFO  - Processor reset is completed for ps7_cortexa9_0 
+10:38:38.721 ERROR - Port COM16 is already in use. 
+10:38:39.118 INFO  - Processor reset is completed for ps7_cortexa9_0 
+10:42:07.011 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+21:39:59.340 INFO  - Processing command line option -hwspec C:/Users/sony/Desktop/lab1/lab1.sdk/SDK/SDK_Export/hw/system.xml. 
+21:40:01.864 INFO  - The hardware specification for project 'hw_platform_0' is different from C:/Users/sony/Desktop/lab1/lab1.sdk/SDK/SDK_Export/hw/system.xml. 
+21:40:01.964 INFO  - Copied contents of C:/Users/sony/Desktop/lab1/lab1.sdk/SDK/SDK_Export/hw/system.xml into \hw_platform_0\system.xml. 
+21:40:03.493 INFO  - Copied contents of C:\Users\sony\Desktop\lab1\lab1.sdk\SDK\SDK_Export\hw\ps7_init.c into \hw_platform_0\ps7_init.c. 
+21:40:03.825 INFO  - Copied contents of C:\Users\sony\Desktop\lab1\lab1.sdk\SDK\SDK_Export\hw\ps7_init.h into \hw_platform_0\ps7_init.h. 
+21:40:04.392 INFO  - Copied contents of C:\Users\sony\Desktop\lab1\lab1.sdk\SDK\SDK_Export\hw\ps7_init.html into \hw_platform_0\ps7_init.html. 
+21:40:05.006 INFO  - Copied contents of C:\Users\sony\Desktop\lab1\lab1.sdk\SDK\SDK_Export\hw\ps7_summary.html into \hw_platform_0\ps7_summary.html. 
+21:40:05.127 INFO  - Copied contents of C:\Users\sony\Desktop\lab1\lab1.sdk\SDK\SDK_Export\hw\ps7_init.tcl into \hw_platform_0\ps7_init.tcl. 
+21:40:05.291 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+21:41:12.334 INFO  - Updating hardware inferred compiler options for mem-test. 
+21:41:13.086 INFO  - Updating hardware inferred compiler options for mem_test. 
+21:41:13.133 INFO  - Clearing existing target manager status. 
+21:43:48.732 INFO  - Processor reset is completed for ps7_cortexa9_0 
+21:43:48.832 INFO  - PS initialization will be done as it is not done before. 
+21:43:48.832 INFO  - Running PS initialization.... 
+21:43:49.258 INFO  - ps7_init is completed. 
+21:43:49.358 INFO  - PS Initialization is complete. 
+21:44:23.239 ERROR - Port COM16 is already in use. 
+21:44:23.636 INFO  - Processor reset is completed for ps7_cortexa9_0 
+21:47:32.695 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  

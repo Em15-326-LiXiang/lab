@@ -1,0 +1,917 @@
+19:40:32 **** Build of project mem_test_bsp ****
+make -k all 
+libgen -hw ../hw_platform_0/system.xml\
+	       \
+	       -pe ps7_cortexa9_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 2013.4 Build EDK_2013.4.20131205
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../hw_platform_0/system.xml -pe ps7_cortexa9_0 -log
+libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'make -s include "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+
+Running libs - 'make -s libs "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+"Compiling standalone"
+arm-xilinx-eabi-ar: creating ../../../lib/libxil.a
+"Compiling devcfg"
+"Compiling dmaps"
+"Compiling scugic"
+"Compiling scutimer"
+"Compiling scuwdt"
+"Compiling uartps"
+"Compiling xadcps"
+"Compiling cpu_cortexa9"
+Running execs_generate.
+'Finished building libraries'
+19:41:29 **** Build of configuration Debug for project mem_test ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../mem_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../mem_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.d" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: mem_test.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mem_test_bsp/ps7_cortexa9_0/lib -o "mem_test.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mem_test.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size mem_test.elf  |tee "mem_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  22872	   1096	  22612	  46580	   b5f4	mem_test.elf
+'Finished building: mem_test.elf.size'
+' '
+19:44:58 **** Build of project mem_test1_bsp ****
+make -k all 
+libgen -hw ../hw_platform_0/system.xml\
+	       \
+	       -pe ps7_cortexa9_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 2013.4 Build EDK_2013.4.20131205
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../hw_platform_0/system.xml -pe ps7_cortexa9_0 -log
+libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'make -s include "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+
+Running libs - 'make -s libs "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+"Compiling standalone"
+arm-xilinx-eabi-ar: creating ../../../lib/libxil.a
+"Compiling devcfg"
+"Compiling dmaps"
+"Compiling scugic"
+"Compiling scutimer"
+"Compiling scuwdt"
+"Compiling uartps"
+"Compiling xadcps"
+"Compiling cpu_cortexa9"
+Running execs_generate.
+'Finished building libraries'
+19:45:31 **** Build of configuration Debug for project mem_test1 ****
+make all 
+'Building file: ../src/memory_config_g.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../mem_test1_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/memory_config_g.d" -MT"src/memory_config_g.d" -o "src/memory_config_g.o" "../src/memory_config_g.c"
+'Finished building: ../src/memory_config_g.c'
+' '
+'Building file: ../src/memorytest.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../mem_test1_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/memorytest.d" -MT"src/memorytest.d" -o "src/memorytest.o" "../src/memorytest.c"
+'Finished building: ../src/memorytest.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../mem_test1_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.d" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: mem_test1.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mem_test1_bsp/ps7_cortexa9_0/lib -o "mem_test1.elf"  ./src/memory_config_g.o ./src/memorytest.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mem_test1.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size mem_test1.elf  |tee "mem_test1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  26136	   1136	  14436	  41708	   a2ec	mem_test1.elf
+'Finished building: mem_test1.elf.size'
+' '
+20:10:25 **** Incremental Build of configuration Debug for project mem_test1 ****
+make all 
+make: Nothing to be done for `all'.
+20:14:14 **** Incremental Build of configuration Debug for project mem_test1 ****
+make all 
+make: Nothing to be done for `all'.
+20:18:28 **** Incremental Build of configuration Debug for project mem_test1 ****
+make all 
+make: Nothing to be done for `all'.
+20:20:27 **** Incremental Build of configuration Debug for project mem_test1 ****
+make all 
+make: Nothing to be done for `all'.
+20:21:04 **** Incremental Build of configuration Debug for project mem_test1 ****
+make all 
+make: Nothing to be done for `all'.
+20:21:34 **** Incremental Build of configuration Debug for project mem_test1 ****
+make all 
+make: Nothing to be done for `all'.
+20:30:00 **** Incremental Build of configuration Debug for project mem_test1 ****
+make all 
+make: Nothing to be done for `all'.
+20:30:39 **** Incremental Build of configuration Debug for project mem_test1 ****
+make all 
+make: Nothing to be done for `all'.
+20:33:06 **** Auto Build of configuration Debug for project mem_test1 ****
+make all 
+'Building file: ../src/memorytest.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../mem_test1_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/memorytest.d" -MT"src/memorytest.d" -o "src/memorytest.o" "../src/memorytest.c"
+'Finished building: ../src/memorytest.c'
+' '
+'Building target: mem_test1.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mem_test1_bsp/ps7_cortexa9_0/lib -o "mem_test1.elf"  ./src/memory_config_g.o ./src/memorytest.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mem_test1.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size mem_test1.elf  |tee "mem_test1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  26188	   1136	  14436	  41760	   a320	mem_test1.elf
+'Finished building: mem_test1.elf.size'
+' '
+20:33:57 **** Incremental Build of configuration Debug for project mem_test1 ****
+make all 
+make: Nothing to be done for `all'.
+20:39:05 **** Auto Build of project mem_test1_bsp ****
+make -k all 
+'Finished building libraries'
+20:39:10 **** Clean-only build of project mem_test1_bsp ****
+make -k clean 
+rm -rf ps7_cortexa9_0
+20:39:12 **** Clean-only build of configuration Debug for project mem_test1 ****
+make clean 
+rm -rf  ./src/memory_config_g.o ./src/memorytest.o ./src/platform.o  ./src/memory_config_g.d ./src/memorytest.d ./src/platform.d  mem_test1.elf.size  mem_test1.elf
+' '
+20:39:13 **** Build of project mem_test1_bsp ****
+make -k all 
+libgen -hw ../hw_platform_0/system.xml\
+	       \
+	       -pe ps7_cortexa9_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 2013.4 Build EDK_2013.4.20131205
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../hw_platform_0/system.xml -pe ps7_cortexa9_0 -log
+libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'make -s include "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+
+Running libs - 'make -s libs "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+"Compiling standalone"
+arm-xilinx-eabi-ar: creating ../../../lib/libxil.a
+"Compiling devcfg"
+"Compiling dmaps"
+"Compiling scugic"
+"Compiling scutimer"
+"Compiling scuwdt"
+"Compiling uartps"
+"Compiling xadcps"
+"Compiling cpu_cortexa9"
+Running execs_generate.
+'Finished building libraries'
+20:39:37 **** Build of configuration Debug for project mem_test1 ****
+make all 
+'Building file: ../src/memory_config_g.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../mem_test1_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/memory_config_g.d" -MT"src/memory_config_g.d" -o "src/memory_config_g.o" "../src/memory_config_g.c"
+'Finished building: ../src/memory_config_g.c'
+' '
+'Building file: ../src/memorytest.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../mem_test1_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/memorytest.d" -MT"src/memorytest.d" -o "src/memorytest.o" "../src/memorytest.c"
+'Finished building: ../src/memorytest.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../mem_test1_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.d" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: mem_test1.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mem_test1_bsp/ps7_cortexa9_0/lib -o "mem_test1.elf"  ./src/memory_config_g.o ./src/memorytest.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mem_test1.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size mem_test1.elf  |tee "mem_test1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  26188	   1136	  14436	  41760	   a320	mem_test1.elf
+'Finished building: mem_test1.elf.size'
+' '
+20:45:34 **** Incremental Build of configuration Debug for project mem_test1 ****
+make all 
+make: Nothing to be done for `all'.
+20:46:07 **** Incremental Build of configuration Debug for project mem_test1 ****
+make all 
+make: Nothing to be done for `all'.
+20:47:06 **** Incremental Build of configuration Debug for project mem_test1 ****
+make all 
+make: Nothing to be done for `all'.
+20:47:47 **** Incremental Build of configuration Debug for project mem_test1 ****
+make all 
+make: Nothing to be done for `all'.
+20:49:18 **** Incremental Build of configuration Debug for project mem_test1 ****
+make all 
+make: Nothing to be done for `all'.
+20:50:09 **** Incremental Build of configuration Debug for project mem_test1 ****
+make all 
+make: Nothing to be done for `all'.
+20:51:13 **** Auto Build of project mem_test1_bsp ****
+make -k all 
+libgen -hw ../hw_platform_0/system.xml\
+	       \
+	       -pe ps7_cortexa9_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 2013.4 Build EDK_2013.4.20131205
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../hw_platform_0/system.xml -pe ps7_cortexa9_0 -log
+libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'make -s include "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+
+Running libs - 'make -s libs "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+"Compiling standalone"
+arm-xilinx-eabi-ar: creating ../../../lib/libxil.a
+"Compiling devcfg"
+"Compiling dmaps"
+"Compiling scugic"
+"Compiling scutimer"
+"Compiling scuwdt"
+"Compiling uartps"
+"Compiling xadcps"
+"Compiling cpu_cortexa9"
+Running execs_generate.
+'Finished building libraries'
+20:51:40 **** Auto Build of configuration Debug for project mem_test1 ****
+make all 
+make: Nothing to be done for `all'.
+20:51:43 **** Clean-only build of project mem_test1_bsp ****
+make -k clean 
+rm -rf ps7_cortexa9_0
+20:51:44 **** Clean-only build of configuration Debug for project mem_test1 ****
+make clean 
+rm -rf  ./src/memory_config_g.o ./src/memorytest.o ./src/platform.o  ./src/memory_config_g.d ./src/memorytest.d ./src/platform.d  mem_test1.elf.size  mem_test1.elf
+' '
+20:51:44 **** Build of project mem_test1_bsp ****
+make -k all 
+libgen -hw ../hw_platform_0/system.xml\
+	       \
+	       -pe ps7_cortexa9_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 2013.4 Build EDK_2013.4.20131205
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../hw_platform_0/system.xml -pe ps7_cortexa9_0 -log
+libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'make -s include "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+
+Running libs - 'make -s libs "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+"Compiling standalone"
+arm-xilinx-eabi-ar: creating ../../../lib/libxil.a
+"Compiling devcfg"
+"Compiling dmaps"
+"Compiling scugic"
+"Compiling scutimer"
+"Compiling scuwdt"
+"Compiling uartps"
+"Compiling xadcps"
+"Compiling cpu_cortexa9"
+Running execs_generate.
+'Finished building libraries'
+20:52:09 **** Build of configuration Debug for project mem_test1 ****
+make all 
+'Building file: ../src/memory_config_g.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../mem_test1_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/memory_config_g.d" -MT"src/memory_config_g.d" -o "src/memory_config_g.o" "../src/memory_config_g.c"
+'Finished building: ../src/memory_config_g.c'
+' '
+'Building file: ../src/memorytest.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../mem_test1_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/memorytest.d" -MT"src/memorytest.d" -o "src/memorytest.o" "../src/memorytest.c"
+'Finished building: ../src/memorytest.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../mem_test1_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.d" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: mem_test1.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mem_test1_bsp/ps7_cortexa9_0/lib -o "mem_test1.elf"  ./src/memory_config_g.o ./src/memorytest.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mem_test1.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size mem_test1.elf  |tee "mem_test1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  26188	   1136	  14436	  41760	   a320	mem_test1.elf
+'Finished building: mem_test1.elf.size'
+' '
+20:59:08 **** Incremental Build of configuration Debug for project mem_test1 ****
+make all 
+make: Nothing to be done for `all'.
+20:59:35 **** Incremental Build of configuration Debug for project mem_test1 ****
+make all 
+make: Nothing to be done for `all'.
+10:47:07 **** Auto Build of project mem_test1_bsp ****
+make -k all 
+'Finished building libraries'
+10:47:11 **** Auto Build of project mem_test1_bsp ****
+make -k all 
+'Finished building libraries'
+10:47:24 **** Clean-only build of project mem_test1_bsp ****
+make -k clean 
+rm -rf ps7_cortexa9_0
+10:47:30 **** Clean-only build of configuration Debug for project mem_test1 ****
+make clean 
+rm -rf  ./src/memory_config_g.o ./src/memorytest.o ./src/platform.o  ./src/memory_config_g.d ./src/memorytest.d ./src/platform.d  mem_test1.elf.size  mem_test1.elf
+' '
+10:47:31 **** Build of project mem_test1_bsp ****
+make -k all 
+libgen -hw ../hw_platform_0/system.xml\
+	       \
+	       -pe ps7_cortexa9_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 2013.4 Build EDK_2013.4.20131205
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../hw_platform_0/system.xml -pe ps7_cortexa9_0 -log
+libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'make -s include "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+
+Running libs - 'make -s libs "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+"Compiling standalone"
+arm-xilinx-eabi-ar: creating ../../../lib/libxil.a
+"Compiling devcfg"
+"Compiling dmaps"
+"Compiling scugic"
+"Compiling scutimer"
+"Compiling scuwdt"
+"Compiling uartps"
+"Compiling xadcps"
+"Compiling cpu_cortexa9"
+Running execs_generate.
+'Finished building libraries'
+10:48:29 **** Build of project mem-test_bsp ****
+make -k all 
+libgen -hw ../hw_platform_0/system.xml\
+	       \
+	       -pe ps7_cortexa9_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 2013.4 Build EDK_2013.4.20131205
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../hw_platform_0/system.xml -pe ps7_cortexa9_0 -log
+libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'make -s include "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+
+Running libs - 'make -s libs "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+"Compiling standalone"
+arm-xilinx-eabi-ar: creating ../../../lib/libxil.a
+"Compiling devcfg"
+"Compiling dmaps"
+"Compiling scugic"
+"Compiling scutimer"
+"Compiling scuwdt"
+"Compiling uartps"
+"Compiling xadcps"
+"Compiling cpu_cortexa9"
+Running execs_generate.
+'Finished building libraries'
+10:49:04 **** Build of configuration Debug for project mem-test ****
+make all 
+'Building file: ../src/memory_config_g.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../mem-test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/memory_config_g.d" -MT"src/memory_config_g.d" -o "src/memory_config_g.o" "../src/memory_config_g.c"
+'Finished building: ../src/memory_config_g.c'
+' '
+'Building file: ../src/memorytest.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../mem-test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/memorytest.d" -MT"src/memorytest.d" -o "src/memorytest.o" "../src/memorytest.c"
+'Finished building: ../src/memorytest.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../mem-test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.d" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: mem-test.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mem-test_bsp/ps7_cortexa9_0/lib -o "mem-test.elf"  ./src/memory_config_g.o ./src/memorytest.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mem-test.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size mem-test.elf  |tee "mem-test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  26136	   1136	  14436	  41708	   a2ec	mem-test.elf
+'Finished building: mem-test.elf.size'
+' '
+10:49:12 **** Build of configuration Debug for project mem_test1 ****
+make all 
+'Building file: ../src/memory_config_g.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../mem_test1_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/memory_config_g.d" -MT"src/memory_config_g.d" -o "src/memory_config_g.o" "../src/memory_config_g.c"
+'Finished building: ../src/memory_config_g.c'
+' '
+'Building file: ../src/memorytest.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../mem_test1_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/memorytest.d" -MT"src/memorytest.d" -o "src/memorytest.o" "../src/memorytest.c"
+'Finished building: ../src/memorytest.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../mem_test1_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.d" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: mem_test1.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mem_test1_bsp/ps7_cortexa9_0/lib -o "mem_test1.elf"  ./src/memory_config_g.o ./src/memorytest.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mem_test1.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size mem_test1.elf  |tee "mem_test1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  26188	   1136	  14436	  41760	   a320	mem_test1.elf
+'Finished building: mem_test1.elf.size'
+' '
+10:49:54 **** Incremental Build of configuration Debug for project mem-test ****
+make all 
+make: Nothing to be done for `all'.
+10:49:55 **** Incremental Build of configuration Debug for project mem_test1 ****
+make all 
+make: Nothing to be done for `all'.
+10:50:55 **** Incremental Build of configuration Debug for project mem-test ****
+make all 
+make: Nothing to be done for `all'.
+10:50:57 **** Incremental Build of configuration Debug for project mem_test1 ****
+make all 
+make: Nothing to be done for `all'.
+10:52:11 **** Incremental Build of configuration Debug for project mem-test ****
+make all 
+make: Nothing to be done for `all'.
+10:52:12 **** Incremental Build of configuration Debug for project mem_test1 ****
+make all 
+make: Nothing to be done for `all'.
+10:52:44 **** Auto Build of configuration Debug for project mem-test ****
+make all 
+'Building file: ../src/memorytest.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../mem-test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/memorytest.d" -MT"src/memorytest.d" -o "src/memorytest.o" "../src/memorytest.c"
+'Finished building: ../src/memorytest.c'
+' '
+'Building target: mem-test.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mem-test_bsp/ps7_cortexa9_0/lib -o "mem-test.elf"  ./src/memory_config_g.o ./src/memorytest.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mem-test.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size mem-test.elf  |tee "mem-test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  26116	   1136	  14436	  41688	   a2d8	mem-test.elf
+'Finished building: mem-test.elf.size'
+' '
+10:52:51 **** Incremental Build of configuration Debug for project mem-test ****
+make all 
+make: Nothing to be done for `all'.
+10:52:52 **** Incremental Build of configuration Debug for project mem_test1 ****
+make all 
+make: Nothing to be done for `all'.
+10:55:46 **** Auto Build of configuration Debug for project mem-test ****
+make all 
+'Building file: ../src/memorytest.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../mem-test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/memorytest.d" -MT"src/memorytest.d" -o "src/memorytest.o" "../src/memorytest.c"
+'Finished building: ../src/memorytest.c'
+' '
+'Building target: mem-test.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mem-test_bsp/ps7_cortexa9_0/lib -o "mem-test.elf"  ./src/memory_config_g.o ./src/memorytest.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mem-test.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size mem-test.elf  |tee "mem-test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  26112	   1136	  14436	  41684	   a2d4	mem-test.elf
+'Finished building: mem-test.elf.size'
+' '
+10:56:00 **** Incremental Build of configuration Debug for project mem-test ****
+make all 
+make: Nothing to be done for `all'.
+10:56:01 **** Incremental Build of configuration Debug for project mem_test1 ****
+make all 
+make: Nothing to be done for `all'.
+10:57:15 **** Auto Build of configuration Debug for project mem-test ****
+make all 
+'Building file: ../src/memorytest.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../mem-test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/memorytest.d" -MT"src/memorytest.d" -o "src/memorytest.o" "../src/memorytest.c"
+'Finished building: ../src/memorytest.c'
+' '
+'Building target: mem-test.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mem-test_bsp/ps7_cortexa9_0/lib -o "mem-test.elf"  ./src/memory_config_g.o ./src/memorytest.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mem-test.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size mem-test.elf  |tee "mem-test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  26116	   1136	  14436	  41688	   a2d8	mem-test.elf
+'Finished building: mem-test.elf.size'
+' '
+10:57:20 **** Incremental Build of configuration Debug for project mem-test ****
+make all 
+make: Nothing to be done for `all'.
+10:57:22 **** Incremental Build of configuration Debug for project mem_test1 ****
+make all 
+make: Nothing to be done for `all'.
+10:58:21 **** Auto Build of configuration Debug for project mem-test ****
+make all 
+'Building file: ../src/memorytest.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../mem-test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/memorytest.d" -MT"src/memorytest.d" -o "src/memorytest.o" "../src/memorytest.c"
+'Finished building: ../src/memorytest.c'
+' '
+'Building target: mem-test.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mem-test_bsp/ps7_cortexa9_0/lib -o "mem-test.elf"  ./src/memory_config_g.o ./src/memorytest.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mem-test.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size mem-test.elf  |tee "mem-test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  26116	   1136	  14436	  41688	   a2d8	mem-test.elf
+'Finished building: mem-test.elf.size'
+' '
+10:58:27 **** Incremental Build of configuration Debug for project mem-test ****
+make all 
+make: Nothing to be done for `all'.
+10:58:28 **** Incremental Build of configuration Debug for project mem_test1 ****
+make all 
+make: Nothing to be done for `all'.
+21:17:26 **** Auto Build of project mem-test_bsp ****
+make -k all 
+'Finished building libraries'
+21:17:29 **** Auto Build of project mem_test1_bsp ****
+make -k all 
+'Finished building libraries'
+21:17:36 **** Auto Build of project mem-test_bsp ****
+make -k all 
+libgen -hw ../hw_platform_0/system.xml\
+	       \
+	       -pe ps7_cortexa9_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 2013.4 Build EDK_2013.4.20131205
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../hw_platform_0/system.xml -pe ps7_cortexa9_0 -log
+libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'make -s include "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+
+Running libs - 'make -s libs "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+"Compiling standalone"
+arm-xilinx-eabi-ar: creating ../../../lib/libxil.a
+"Compiling devcfg"
+"Compiling dmaps"
+"Compiling scugic"
+"Compiling scutimer"
+"Compiling scuwdt"
+"Compiling uartps"
+"Compiling xadcps"
+"Compiling cpu_cortexa9"
+Running execs_generate.
+'Finished building libraries'
+21:18:36 **** Auto Build of configuration Debug for project mem-test ****
+make all 
+make: Nothing to be done for `all'.
+21:18:37 **** Auto Build of project mem_test1_bsp ****
+make -k all 
+libgen -hw ../hw_platform_0/system.xml\
+	       \
+	       -pe ps7_cortexa9_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 2013.4 Build EDK_2013.4.20131205
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../hw_platform_0/system.xml -pe ps7_cortexa9_0 -log
+libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'make -s include "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+
+Running libs - 'make -s libs "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+"Compiling standalone"
+arm-xilinx-eabi-ar: creating ../../../lib/libxil.a
+"Compiling devcfg"
+"Compiling dmaps"
+"Compiling scugic"
+"Compiling scutimer"
+"Compiling scuwdt"
+"Compiling uartps"
+"Compiling xadcps"
+"Compiling cpu_cortexa9"
+Running execs_generate.
+'Finished building libraries'
+21:19:16 **** Auto Build of configuration Debug for project mem_test1 ****
+make all 
+make: Nothing to be done for `all'.
+21:27:10 **** Auto Build of configuration Debug for project mem-test ****
+make all 
+'Building file: ../src/memorytest.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../mem-test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/memorytest.d" -MT"src/memorytest.d" -o "src/memorytest.o" "../src/memorytest.c"
+'Finished building: ../src/memorytest.c'
+' '
+'Building target: mem-test.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mem-test_bsp/ps7_cortexa9_0/lib -o "mem-test.elf"  ./src/memory_config_g.o ./src/memorytest.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mem-test.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size mem-test.elf  |tee "mem-test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  26132	   1136	  14436	  41704	   a2e8	mem-test.elf
+'Finished building: mem-test.elf.size'
+' '
+21:28:22 **** Incremental Build of configuration Debug for project mem-test ****
+make all 
+make: Nothing to be done for `all'.
+21:28:27 **** Incremental Build of configuration Debug for project mem_test1 ****
+make all 
+make: Nothing to be done for `all'.
+21:28:50 **** Incremental Build of configuration Debug for project mem-test ****
+make all 
+make: Nothing to be done for `all'.
+21:28:51 **** Incremental Build of configuration Debug for project mem_test1 ****
+make all 
+make: Nothing to be done for `all'.
+21:29:37 **** Incremental Build of configuration Debug for project mem-test ****
+make all 
+make: Nothing to be done for `all'.
+21:29:39 **** Incremental Build of configuration Debug for project mem_test1 ****
+make all 
+make: Nothing to be done for `all'.
+21:29:43 **** Incremental Build of configuration Debug for project mem-test ****
+make all 
+make: Nothing to be done for `all'.
+21:29:44 **** Incremental Build of configuration Debug for project mem_test1 ****
+make all 
+make: Nothing to be done for `all'.
+21:31:10 **** Incremental Build of configuration Debug for project mem-test ****
+make all 
+make: Nothing to be done for `all'.
+21:31:11 **** Incremental Build of configuration Debug for project mem_test1 ****
+make all 
+make: Nothing to be done for `all'.
+21:31:34 **** Incremental Build of configuration Debug for project mem-test ****
+make all 
+make: Nothing to be done for `all'.
+21:31:35 **** Incremental Build of configuration Debug for project mem_test1 ****
+make all 
+make: Nothing to be done for `all'.
+21:32:32 **** Incremental Build of configuration Debug for project mem-test ****
+make all 
+make: Nothing to be done for `all'.
+21:32:33 **** Incremental Build of configuration Debug for project mem_test1 ****
+make all 
+make: Nothing to be done for `all'.
+21:54:41 **** Auto Build of project mem-test_bsp ****
+make -k all 
+'Finished building libraries'
+21:54:43 **** Auto Build of project mem_test1_bsp ****
+make -k all 
+'Finished building libraries'
+21:54:49 **** Auto Build of project mem-test_bsp ****
+make -k all 
+libgen -hw ../hw_platform_0/system.xml\
+	       \
+	       -pe ps7_cortexa9_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 2013.4 Build EDK_2013.4.20131205
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../hw_platform_0/system.xml -pe ps7_cortexa9_0 -log
+libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'make -s include "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+
+Running libs - 'make -s libs "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+"Compiling standalone"
+arm-xilinx-eabi-ar: creating ../../../lib/libxil.a
+"Compiling devcfg"
+"Compiling dmaps"
+"Compiling scugic"
+"Compiling scutimer"
+"Compiling scuwdt"
+"Compiling uartps"
+"Compiling xadcps"
+"Compiling cpu_cortexa9"
+Running execs_generate.
+'Finished building libraries'
+21:55:48 **** Auto Build of configuration Debug for project mem-test ****
+make all 
+make: Nothing to be done for `all'.
+21:55:48 **** Auto Build of project mem_test1_bsp ****
+make -k all 
+libgen -hw ../hw_platform_0/system.xml\
+	       \
+	       -pe ps7_cortexa9_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 2013.4 Build EDK_2013.4.20131205
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../hw_platform_0/system.xml -pe ps7_cortexa9_0 -log
+libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'make -s include "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+
+Running libs - 'make -s libs "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+"Compiling standalone"
+arm-xilinx-eabi-ar: creating ../../../lib/libxil.a
+"Compiling devcfg"
+"Compiling dmaps"
+"Compiling scugic"
+"Compiling scutimer"
+"Compiling scuwdt"
+"Compiling uartps"
+"Compiling xadcps"
+"Compiling cpu_cortexa9"
+Running execs_generate.
+'Finished building libraries'
+21:56:26 **** Auto Build of configuration Debug for project mem_test1 ****
+make all 
+make: Nothing to be done for `all'.
+21:56:28 **** Incremental Build of configuration Debug for project mem-test ****
+make all 
+make: Nothing to be done for `all'.
+21:56:29 **** Incremental Build of configuration Debug for project mem_test1 ****
+make all 
+make: Nothing to be done for `all'.
+21:56:54 **** Incremental Build of configuration Debug for project mem-test ****
+make all 
+make: Nothing to be done for `all'.
+21:56:55 **** Incremental Build of configuration Debug for project mem_test1 ****
+make all 
+make: Nothing to be done for `all'.
+21:58:01 **** Incremental Build of configuration Debug for project mem-test ****
+make all 
+make: Nothing to be done for `all'.
+21:58:10 **** Incremental Build of configuration Debug for project mem_test1 ****
+make all 
+make: Nothing to be done for `all'.
+21:58:43 **** Incremental Build of configuration Debug for project mem-test ****
+make all 
+make: Nothing to be done for `all'.
+21:58:44 **** Incremental Build of configuration Debug for project mem_test1 ****
+make all 
+make: Nothing to be done for `all'.
+21:59:25 **** Incremental Build of configuration Debug for project mem-test ****
+make all 
+make: Nothing to be done for `all'.
+21:59:26 **** Incremental Build of configuration Debug for project mem_test1 ****
+make all 
+make: Nothing to be done for `all'.
+22:01:09 **** Incremental Build of configuration Debug for project mem-test ****
+make all 
+make: Nothing to be done for `all'.
+22:01:10 **** Incremental Build of configuration Debug for project mem_test1 ****
+make all 
+make: Nothing to be done for `all'.
