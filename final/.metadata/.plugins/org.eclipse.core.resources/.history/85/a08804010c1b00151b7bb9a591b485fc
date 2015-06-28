@@ -1,0 +1,75 @@
+#include "xparameters.h"
+#include "xgpio.h"
+#include "xutil.h"
+#include<stdio.h>
+
+//====================================================
+
+int main (void) 
+{
+	XGpio led1,led2,led3,led4;
+	XGpio buttons;
+	int i;
+	int psb_check;//button的返回值
+
+    xil_printf("-- Start of the Program --\r\n");
+
+	XGpio_Initialize(&led1,XPAR_LED1_DEVICE_ID);
+	XGpio_SetDataDirection(&led1,1,0x00000000);//0是输出
+	XGpio_Initialize(&led2,XPAR_LED2_DEVICE_ID);
+	XGpio_SetDataDirection(&led2,1,0x00000000);//0是输出
+	XGpio_Initialize(&led3,XPAR_LED3_DEVICE_ID);
+	XGpio_SetDataDirection(&led3,1,0x00000000);//0是输出
+	XGpio_Initialize(&led4,XPAR_LED4_DEVICE_ID);
+	XGpio_SetDataDirection(&led4,1,0x00000000);//0是输出
+
+	XGpio_Initialize(&buttons, XPAR_BTNS_4BIT_DEVICE_ID);
+	XGpio_SetDataDirection(&buttons, 1, 0xffffffff);//1是输入
+
+	int myrand[5]={0,1,2,3,4};
+
+	/*随机亮
+	int myrand[5]={0,1,2,3,4};
+	int rValue;
+	while (1)
+	{
+		rValue = myrand[rand()%5];//产生1到4
+		if(rValue == 1)
+		{
+			xil_printf("rValue %x\r\n",rValue);
+			XGpio_DiscreteWrite(&led1,1,0xffffffff);
+			XGpio_DiscreteWrite(&led2,1,0x00000000);
+			XGpio_DiscreteWrite(&led3,1,0x00000000);
+			XGpio_DiscreteWrite(&led4,1,0x00000000);
+		}
+		else if(rValue == 2)
+		{
+			xil_printf("rValue %x\r\n",rValue);
+			XGpio_DiscreteWrite(&led2,1,0xffffffff);
+			XGpio_DiscreteWrite(&led1,1,0x00000000);
+			XGpio_DiscreteWrite(&led3,1,0x00000000);
+			XGpio_DiscreteWrite(&led4,1,0x00000000);
+		}
+		else if(rValue == 3)
+		{
+			xil_printf("rValue %x\r\n",rValue);
+			XGpio_DiscreteWrite(&led3,1,0xffffffff);
+			XGpio_DiscreteWrite(&led1,1,0x00000000);
+			XGpio_DiscreteWrite(&led2,1,0x00000000);
+			XGpio_DiscreteWrite(&led4,1,0x00000000);
+		}
+		else if(rValue == 4)
+		{
+			xil_printf("rValue %x\r\n",rValue);
+			XGpio_DiscreteWrite(&led4,1,0xffffffff);
+			XGpio_DiscreteWrite(&led2,1,0x00000000);
+			XGpio_DiscreteWrite(&led3,1,0x00000000);
+			XGpio_DiscreteWrite(&led1,1,0x00000000);
+		}
+
+
+	    for (i=0; i<9999999; i++);
+	}
+	*/
+}
+ 
